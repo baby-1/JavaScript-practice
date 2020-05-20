@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			/*
+			     函数作用域
+				   -  调用函数时创建函数作用域，函数执行完毕后，函数作用域销毁
+				   -  每调用一次函数就会创建一个新的函数作用域，他们之间是互相独立的；
+				   -  在函数作用域中可以访问到全局的变量
+				   -  在全局作用域的变量无法访问到函数作用域的变量
+				   -  当在函数作用域操作一个变量时，它会现在自身作用域中寻找，如果有就直接使用
+				       如果没有则向上一级作用域中寻找，直到找到全局作用域，如果全局作用域
+					   中依然没有找到，则会报错ReferenceError
+ 
+	
+			 */
+		   
+		   var a = 10;
+		    function fun(){
+			  // var a = "我是函数中的变量a";我们发现注释之后就会输出a=10
+				console.log("a = "+ a);
+				function fun2(){
+					console.log("a = " +a);
+				}
+			}
+			fun();
+			
+			console.log(a);              ，,
+			
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js</title>
+	</head>
+	<body>
+		/*
+		  函数也可以称为对象属性；
+		  如果一个函数作为一个对象的属性保存，
+		  那么我们称这个函数是这个对象的方法
+		  调用函数就说调用对象的方法（method）
+		  
+		  但是它只是名称上的差别，没有其它的区别；
+		*/
+		<script>
+			var obj = new Object();
+			obj.name = "孙悟空";
+			obj.age = 18;
+			//对象属性可以是任何的数据类型，也可以是函数
+			obj.sayName = function(){
+				console.log(obj.name);
+				
+			};
+			//console.log(obj.sayName());
+			//obj.sayName();//这是调用方法。//fun（）这是调用函数
+			
+			var ob = {
+				name: "孙悟空",
+				age: 18,
+				xy:"男",
+				address:"花果山"
+			};
+			/*
+			  枚举对象中的属性
+			  使用for ... in 语句
+			  
+			  for(var 变量 in 对象){//对象中有几个属性就执行几次；
+				  
+			  }
+			*/
+			for(var n in ob){
+				
+				//console.log(n);//属性名
+				//console.log("hello");//对象中有几个属性就执行几次；
+			    console.log(ob[n]);
+		   }
+			
+		</script>
+	</body>
+</html>

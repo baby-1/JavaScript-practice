@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>运算符</title>
+	</head>
+	<body>
+		/*
+		 * 运算符也叫操作符;
+		      通过运算符可以对一个或多个值进行运算，并获取运算结果；
+		      比如：typeof就是运算符，也可以获得一个值得类型,它会将该值的类型以字符串的形式返回的，
+		      它会将该值的类型以字符串的形式返回  number  string  Boolean  undefined  object
+		   
+		   
+		   ---算数运算符
+		     --当对非Number类型的值进行运算时，会将这些值转换为Number然后再运算； --除了字符串；
+		     --任何数和NaN运算都返回NaN;
+		     --如果对两个字符串进行加法运算，则会做拼串，会将两个字符串拼接成一个字符串，并返回；
+		     --("")引号是不能换行的；
+		      + :
+		       	  +  可以对两个值进行加法运算，并将结果返回；
+		      -
+		      *
+		      /
+		      
+		      %
+		      
+		 */
+		<script>
+//			var a = 123;
+//			var result = typeof a;
+//            console.log(result);//console.log(a);这两种方法是一样的只不过，第一种是将返回值保存在result中，而第二种是直接输出的；  
+//		    console.log( typeof result ); //可以看出typeof以字符串的类型返回
+//          var b = 142;
+//          var re = typeof b;
+//          console.log(re);
+//          b= b +1;
+//          console.log(b);
+           // console.log(typeof re);
+           var a = 123;
+           var result = typeof a;
+           result = a+ 123;
+           result = true + 1;
+           result = true + false;
+           result = 2 + null;
+           result = 2 + NaN;
+           result = "123" + "457";
+           var yy = "床前明月光，"
+                     +"疑是地上霜。"
+                      +"举头望明月，"
+                      +"低头思故乡。";
+              yy = "132" + 12;//任何值和字符串相加都会转化为字符串；
+              yy = "123" + true;             
+          // console.log ( yy); 
+          var nu = 123;
+          nu = nu + ""; //我们可以这一特点，来将一个任意的数据类型转换为String类型的；这是一种隐式类型转换，有浏览器自动完成
+                        //实际上它也是调用String（）函数；      
+          //console.log(typeof nu);
+          result = 1 + 2 + "3"; //打印结果是"33"
+          result = "1" + 2 + 3; //打印结果是"123"
+          result = 100 - "1";//除了加法与字符串转换为字符串，其余的都是转化为number
+          //console.log(typeof result);
+          result = 2 * "8";
+          result = 3 / 2 ;
+     	  //console.log(result);
+     	  var t = "123";
+     	  t = t -0;
+     	  console.log(t);
+     	  console.log(typeof t);//利用这一特点来做隐式类型转换-0  *1 /1 都行；//了解一下就行
+		</script>
+	</body>
+</html>

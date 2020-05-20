@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>函数的返回值</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			/*
+			      可以使用return 来设置函数的返回值
+				  语法：return ；
+				     
+			*/
+			   
+		   function  sum(a,b,c){
+			   // alert(a + b + c);
+			   var x = a + b + c ;   
+			   return x ;
+			   alert("hello");//return 后面的语句都不会执行；return后面不跟任何值回一个undef                              // ined，如果不写return也返回undefined；return后面可以跟任何值；
+			   
+		   }
+		   //调用函数
+		   //变量result的值就是函数的执行结果
+		   //函数返回什么result的值就是什么；
+		   var result = sum(1,2,3) ;//aler（“hello”）；alert（）；是没有返回值的；result返回结果是undefined
+		   console.log("result = " + result);
+		    
+			
+		</script>
+	</body>
+</html>
